@@ -1,0 +1,68 @@
+/****************************************************************
+
+  C U S T O M   S T Y L E S   F O R   B A S K E T
+
+****************************************************************/   
+
+
+/* --------------------------------------------------------------
+  Layout
+-------------------------------------------------------------- */
+/* Outline reset */
+body {
+  background: #ebebeb;
+}
+
+#container {
+  width: 960px;
+  margin: auto;
+  min-height: 500px;
+  background: #fff;
+}
+#menu {
+  background: #444;
+  height: 30px; color: #fff; text-align: right;
+}
+#menu ul {
+  list-style: none;
+  margin: 0; padding: 0;
+}
+#menu ul li {
+  float: left;
+  margin-left: 10px;
+}
+#menu ul li a {
+  color: #fff;
+  line-height: 30px;
+  text-decoration: none;
+}
+#menu ul li a:hover {
+  color: #ccc;
+}
+
+h1{
+  padding: 0;
+  margin: 0;
+}
+
+
+
+/* custom */
+.header,
+#content{
+  padding:10px 0;
+  overflow:hidden;
+}
+.header .pull-right{text-align:right;}
+div.navbar-inner{padding:0;}
+
+.description{
+  font-size: 12px;
+  height: 40px;
+  max-width: 700px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.logo img{width:80px;}

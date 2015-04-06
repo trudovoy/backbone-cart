@@ -1,0 +1,24 @@
+<div class="main">
+	<h2>Каталог товаров</h2>
+
+	<table class="table">
+		<tbody>
+			<% _.each(catalog, function(item){ %>
+			<tr>
+				<td><img width="100" src="<%= item.get("img") %>"></td>			
+				<td>
+					<h4><%= item.get("name") %></h4>
+					<div class="description">
+						<%= item.get("description") %>
+					</div> 
+				</td>				
+				<td width="100">
+					<p><span class="label label-success"> <%= item.get("price") %> руб.</span></p>
+					<button class="btn" data-id="<%= item.get("id") %>">Добавить</button>
+				</td>
+			</tr>
+			<% }); %>
+		</tbody>
+	</table>	
+	
+</div>

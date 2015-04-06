@@ -1,0 +1,33 @@
+<div class="main">
+	<h2>Корзина товаров</h2>
+
+	<% if(catalog.length) { %>
+	<table class="table">	
+		<tbody>
+			<% _.each(catalog, function(item){ %>
+			<tr>
+				<td><img width="50" src="<%= item.get("img") %>"></td>			
+				<td>
+					<h4><%= item.get("name") %></h4>
+					<div class="description">
+						<%= item.get("description") %>
+					</div> 
+				</td>				
+				<td width="100">
+					<p><span class="label label-success"> <%= item.get("price") %> руб.</span></p>
+					<p><%= item.get("quant") %> шт.</p>
+					<button class="btn btn-mini" data-id="<%= item.get("id") %>">Удалить</button>
+				</td>
+			</tr>
+			<% }); %>
+		</tbody>
+	</table>
+
+	<p>Общая стоимость: <%= price %> руб.</p>
+
+	<% } else { %>	
+		<p>Корзина пуста.</p>
+	<% } %>	
+</div>
+
+
